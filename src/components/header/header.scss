@@ -1,0 +1,10 @@
+$border-color: #008FF3;
+
+.nav-wrapper {
+  border-bottom: 1px solid $border-color;
+  padding: 5px;
+}
+.dropdown-toggle {
+  border-color: none;
+  border: none;
+}
