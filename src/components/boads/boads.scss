@@ -1,0 +1,8 @@
+$border-color: #008FF3;
+
+.card {
+  border: 1px solid $border-color;
+  color: $border-color;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+}
