@@ -3,9 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import NewBoard from "../modals/newBoard";
-import './boads.scss'
+import './boards.scss'
+import { Link } from "react-router-dom";
 
-function Boads() {
+function Boards() {
   const [showModalNewBoard, setShowModalNewBoard] = useState(false);
 
   return (
@@ -15,9 +16,11 @@ function Boads() {
       </Row>
       <Row className="mt-1">
         <Col className="col-sm-2 ps-0" >
-          <Card className="h-100 card">
-            <Card.Body>Chelsea</Card.Body>
-          </Card>
+          <Link to='/board/1' className="text-decoration-none">
+            <Card className="h-100 card">
+              <Card.Body>Chelsea</Card.Body>
+            </Card>
+          </Link>
         </Col>
         <Col className="col-sm-2 ps-0">
           <Card className="h-100 card">
@@ -35,4 +38,4 @@ function Boads() {
     </div>
   )
 }
-export default Boads;
+export default Boards;

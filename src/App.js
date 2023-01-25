@@ -1,13 +1,18 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/header';
-import Boads from './components/boads';
+import { Routes, Route } from 'react-router-dom'
+import BoardDetail from './components/boards/detail';
+import Boards from './components/boards';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Boads />
+      <Routes>
+        <Route path='/' element={<Boards />} />
+        <Route path='/board/:id/' element={<BoardDetail />} />
+      </Routes>
     </div>
   );
 }
